@@ -1,0 +1,101 @@
+@import "reset";
+
+// variables
+$font-family : 'Lato', sans-serif;
+
+html{
+    font-size: 18px;
+}
+
+// General
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    font-family: $font-family;
+    background: #f5f5f5;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 1em ;
+}
+
+.altcampus{
+    color: #61BC68;
+    text-decoration: none;
+}
+
+.collapsible-container{
+    max-width: 600px;
+    margin: 2em auto;
+    @media all and (max-width:600px){
+        padding: 1.5em;
+    }
+   .collapsible{
+        border: 1px solid black;
+        border-radius: 0.3rem;
+        padding: 1.5em;
+        position: relative;
+        margin-bottom: 0.5em;
+        background: #f5f5f5;
+        .question-icon{
+            margin-right: 1em;
+            align-self: start;
+        }
+        h4{
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .answer-icon{
+            margin-right: 0.7em;
+            align-self: start;
+        }
+        .answer{
+            display: none;
+        }
+        .btn{
+            background: transparent;
+            border: 1px solid grey;
+            outline: 0;
+            position: absolute;
+            padding: 0.5em 0.65em;
+            top: 10%;
+            // transform: translateY(-50%);
+            right: 2%;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .active{
+            display: flex;
+            margin-top: 0.5em;
+        }
+        .green-text{
+            color: #61BC68;
+        }
+        
+   }
+   .collapsible-active{
+       background: linear-gradient(rgba(lighten($color: lightgrey, $amount: 50),0.9),rgba(lighten($color: lightgrey, $amount: 50),0.9)),url("../media/education.png");
+    //    background-image:;
+       background-repeat: no-repeat;
+       background-position: right;
+   }
+}
+
+
+.footer{
+    text-align: center;
+    margin: 0 auto;
+    .love{
+        color: red;
+    }
+}

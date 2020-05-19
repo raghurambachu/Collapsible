@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  background: #f5f5f5;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.altcampus {
+  color: #61BC68;
+  text-decoration: none;
+}
+
+.collapsible-container {
+  max-width: 600px;
+  margin: 2em auto;
+}
+@media all and (max-width: 600px) {
+  .collapsible-container {
+    padding: 1.5em;
+  }
+}
+.collapsible-container .collapsible {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 1.5em;
+  position: relative;
+  margin-bottom: 0.5em;
+  background: #f5f5f5;
+}
+.collapsible-container .collapsible .question-icon {
+  margin-right: 1em;
+  align-self: start;
+}
+.collapsible-container .collapsible h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.collapsible-container .collapsible .answer-icon {
+  margin-right: 0.7em;
+  align-self: start;
+}
+.collapsible-container .collapsible .answer {
+  display: none;
+}
+.collapsible-container .collapsible .btn {
+  background: transparent;
+  border: 1px solid grey;
+  outline: 0;
+  position: absolute;
+  padding: 0.5em 0.65em;
+  top: 10%;
+  right: 2%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.collapsible-container .collapsible .active {
+  display: flex;
+  margin-top: 0.5em;
+}
+.collapsible-container .collapsible .green-text {
+  color: #61BC68;
+}
+.collapsible-container .collapsible-active {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../media/education.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.footer {
+  text-align: center;
+  margin: 0 auto;
+}
+.footer .love {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
